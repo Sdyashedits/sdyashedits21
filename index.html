@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Portfolio | SD YASH EDITS21</title>
+    
+    <!-- SEO Meta Tags for Google Search -->
+    <meta name="description" content="SD YASH EDITS21 - Professional video editor offering fast delivery, high-quality shorts, reels, and cinematic edits. Book now for exclusive discounts!">
+    <meta name="keywords" content="SD YASH EDITS21, sd_yash_edits21, video editor, bike edit, gaming montage, reels editor">
+
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* HEADER & CROPPED BANNER */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .banner-container {
+            width: 100%;
+            max-width: 900px;
+            height: 180px; /* Adjust this number to make the banner taller or shorter */
+            margin: 0 auto 20px auto;
+            border-radius: 15px;
+            overflow: hidden; /* Cuts off top/bottom black borders */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 25px rgba(255, 49, 49, 0.4);
+            border: 1px solid #222;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center; /* Keeps the focus right on SD YASH EDITS text */
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .highlight {
+            color: #ff3131;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #66d9ff;
+        }
+
+        /* SECTION TITLES */
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 40px 0 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid #ff3131;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .section-wrapper {
+            text-align: center;
+        }
+
+        /* ABOUT SECTION */
+        .about-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #111;
+            border: 2px solid #ff3131;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(255, 49, 49, 0.2);
+            text-align: center;
+        }
+
+        .about-card h2 {
+            color: #ff3131;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* PORTFOLIO SECTION */
+        .portfolio {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .video-card {
+            width: 420px;
+            background: #111;
+            border: 2px solid #ff3131;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            box-shadow: 0 0 20px rgba(255, 49, 49, 0.35);
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 0 35px rgba(255, 49, 49, 0.8);
+        }
+
+        .video-card video {
+            width: 100%;
+            display: block;
+            background: #000;
+        }
+
+        .video-card h3 {
+            padding: 18px;
+            text-align: center;
+            font-size: 1.3rem;
+            color: #66d9ff;
+            letter-spacing: 1px;
+        }
+
+        /* PRICING & SERVICES */
+        .services-grid {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            width: 320px;
+            background: #111;
+            border: 2px solid #ff3131;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 49, 49, 0.25);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #66d9ff;
+            box-shadow: 0 0 25px rgba(102, 217, 255, 0.5);
+        }
+
+        .service-card h3 {
+            color: #66d9ff;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+
+        .rate-box {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #333;
+        }
+
+        .rate-time {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            color: #ff3131;
+            font-weight: bold;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .service-card ul li {
+            padding: 6px 0;
+            color: #ddd;
+            font-size: 0.95rem;
+        }
+
+        .service-card ul li::before {
+            content: "⚡ ";
+            color: #ff3131;
+        }
+
+        /* HIGHLIGHTED DISCOUNT BANNER */
+        .discount-banner {
+            max-width: 800px;
+            margin: 30px auto 0;
+            background: rgba(255, 235, 59, 0.08);
+            border: 2px dashed #ffeb3b;
+            border-radius: 12px;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 235, 59, 0.2);
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        .discount-banner p {
+            color: #ffeb3b;
+            font-size: 1.25rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 15px rgba(255, 235, 59, 0.2); }
+            50% { box-shadow: 0 0 25px rgba(255, 235, 59, 0.5); }
+            100% { box-shadow: 0 0 15px rgba(255, 235, 59, 0.2); }
+        }
+
+        /* SOCIAL & CONTACT SECTION */
+        .contact-section {
+            text-align: center;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .social-btn {
+            display: inline-block;
+            width: 100%;
+            max-width: 380px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .insta-btn {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            box-shadow: 0 0 20px rgba(220, 39, 67, 0.5);
+        }
+
+        .insta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(220, 39, 67, 0.9);
+        }
+
+        .yt-btn {
+            background: #ff0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .yt-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(255, 0, 0, 0.9);
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #222;
+            color: #888;
+        }
+
+        footer a {
+            color: #66d9ff;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .banner-container {
+                height: 120px; /* Scaled down for mobile screens */
+            }
+
+            .video-card, .service-card {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .discount-banner p {
+                font-size: 1.05rem;
+            }
+
+            .social-btn {
+                font-size: 1rem;
+                padding: 12px 20px;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER / BANNER -->
+    <header>
+        <div class="banner-container">
+            <img src="banner.png" 
+                 alt="SD YASH EDITS Banner" 
+                 onerror="this.onerror=null; this.src='banner.jpg'; if(!this.complete || this.naturalWidth===0) this.src='banner.webp'; if(!this.complete || this.naturalWidth===0) this.src='banner.jpeg';">
+        </div>
+        <h1>Sd_Yash <span class="highlight">PortFolio</span></h1>
+        <p class="subtitle">High-Quality Video Content &amp; Cinematic Edits</p>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <div class="section-wrapper">
+        <h2 class="title">About Me</h2>
+    </div>
+    <section class="about-card">
+        <h2>SD YASH EDITS21</h2>
+        <p>I specialize in creating high-energy gaming montages, dynamic bike edits, and luxury car cinematics. With a focus on smooth transitions, sound design, and color grading, I turn raw footage into viral-ready content.</p>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <div class="section-wrapper" id="portfolio">
+        <h2 class="title">My Portfolio</h2>
+    </div>
+    <section class="portfolio">
+        <div class="video-card">
+            <video controls autoplay muted loop playsinline>
+                <source src="BikeEdit.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>🏍 Bike Cinematic Edit</h3>
+        </div>
+
+        <div class="video-card">
+            <video controls autoplay muted loop playsinline>
+                <source src="BmwEdit.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>🚘 BMW Cinematic Edit</h3>
+        </div>
+    </section>
+
+    <!-- SERVICES & PRICING -->
+    <div class="section-wrapper">
+        <h2 class="title">Services &amp; Pricing</h2>
+    </div>
+    <section class="services-grid">
+        <div class="service-card">
+            <h3>⚡ My Editing Services</h3>
+            <ul>
+                <li>Fast Delivery Guaranteed</li>
+                <li>Best Quality Video Editing</li>
+                <li>Professional Sound Effects (SFX)</li>
+                <li>Engaging Subtitles &amp; Captions</li>
+                <li>Smooth Transitions &amp; SFX</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>📱 Shorts / Reels Rates</h3>
+            <div class="rate-box">
+                <div class="rate-time">15s - 30s Video</div>
+                <div class="price">₹400 - ₹600</div>
+            </div>
+            <div class="rate-box">
+                <div class="rate-time">30s - 1 Minute Video</div>
+                <div class="price">₹700 - ₹900</div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <h3>🎬 Long Form Video Rates</h3>
+            <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 15px;">Pricing depends on video length and total editing time required.</p>
+            <div class="rate-box">
+                <div class="rate-time">Full Video Edit</div>
+                <div class="price">₹1000 - ₹3000</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCOUNT & CALL TO ACTION BANNER -->
+    <div class="discount-banner">
+        <p>🔥 Special Offer: Exclusive Discount Available for the First 5 Clients! Book Me as Your Video Editor Now! 🔥</p>
+    </div>
+
+    <!-- SOCIAL & CONTACT SECTION -->
+    <div class="section-wrapper">
+        <h2 class="title">Connect With Me</h2>
+    </div>
+    <section class="contact-section">
+        <a href="https://www.instagram.com/sd_yash_21/" target="_blank" class="social-btn insta-btn">
+            📸 Contact Me on Instagram (@sd_yash_21)
+        </a>
+
+        <a href="https://www.youtube.com/channel/UC0VvtG08oiwzk3mbQ9yzSeQ" target="_blank" class="social-btn yt-btn">
+            ▶ Subscribe on YouTube (@YashEdits_2010)
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 SD YASH EDITS21. All Rights Reserved. | 
+            <a href="https://www.instagram.com/sd_yash_21/" target="_blank">Instagram</a> | 
+            <a href="https://www.youtube.com/channel/UC0VvtG08oiwzk3mbQ9yzSeQ" target="_blank">YouTube</a>
+        </p>
+    </footer>
+
+</body>
+</html>
